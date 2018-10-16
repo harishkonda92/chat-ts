@@ -1,10 +1,11 @@
-import express, { urlencoded } from 'express';
-import http, { Server } from 'http';
+import express from 'express';
+import http from 'http';
 import { welcomeController } from './controllers';
-import { handle404Errors } from './middlewares/handleErrors';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import SocketIO from 'socket.io';
+
+import { handle404Errors } from './middlewares/handleErrors';
 import { IMessage } from './models/IMessage';
 
 
