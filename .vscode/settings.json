@@ -1,0 +1,48 @@
+{
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.projectDetection.disableDetect": true,
+  "workbench.editor.enablePreview": false,
+  "git.autofetch": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 1,
+  "gitlens.keymap": "none",
+"python.pythonPath": "C:\\Users\\SaiUmesh\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
+  "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressResultsExplorerNotice": false,
+      "suppressShowKeyBindingsNotice": true
+  },
+  "search.location": "sidebar",
+  "[javascript]": {},
+  "gitlens.historyExplorer.enabled": true,
+  "files.associations": {
+      "*.js": "javascriptreact"
+  },
+  "gitlens.gitExplorer.files.layout": "tree",
+  "go.gopath": "C:/Go/bin",
+  "[go]": {
+      "editor.insertSpaces": false,
+      "editor.formatOnSave": true
+  },
+  "go.autocompleteUnimportedPackages": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "rust.actionOnSave": "check",
+  "rust.mode": "legacy",
+  "rust.rustup": {
+      "toolchain": "nightly-x86_64-pc-windows-msvc"
+  },
+  "window.menuBarVisibility": "default",
+  "workbench.colorTheme": "Cobalt2",
+  "terminal.integrated.fontFamily": "monospace",
+  "breadcrumbs.enabled": false,
+  "rust-client.channel": "beta",
+}

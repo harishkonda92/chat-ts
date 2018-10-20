@@ -1,4 +1,4 @@
-import { Router, Request, Response } from 'express';
+import { Request, Response, Router } from 'express';
 
 const router: Router = Router();
 
@@ -7,7 +7,7 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 router.get('/:name', (req: Request, res: Response) => {
-    let name = req.params.name;
+    const name = req.params.name;
     res.send(`hello ${name}`);
 });
 
