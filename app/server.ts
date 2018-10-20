@@ -64,8 +64,5 @@ server.listen(PORT, () => {
     console.log(`server started! Listening on ${PORT}`);
 });
 
-
-
-
 export const chatServer: express.Application = app; 
 
