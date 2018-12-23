@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Express-Chrome</title>
+</head>
+
+<body>
+    <h1>Welcome to Electron-chrome extension Messaging service</h1>
+    <form>
+        <input type="text" id="message" placeholder="enter message" value="">
+        <input type="button" value="Send Message" onclick="sendMessage()">
+    </form>
+    <p>Message from server: </p>
+    <p id="servermessage"></p>
+    <script>
+        // Create WebSocket connection.
+        const socket = new WebSocket('ws://localhost:3000/');
+        // Connection opened
+        socket.addEventListener('open', function (event) {
+            socket.send(`Hello server I'm extension 😘`);
+        });
+        // on message from server
+        socket.addEventListener('message', (event) => {
+            document.getElementById('servermessage').innerHTML = event.data;
+        });
+        function sendMessage() {
+            // send message to server
+            const message = document.getElementById('message').value;
+            socket.send(message);
+        }
+    </script>
+</body>
+
+</html>

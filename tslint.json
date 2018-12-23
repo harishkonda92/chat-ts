@@ -1,11 +1,35 @@
 {
     "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
-    ],
+    "extends": "./node_modules/tslint/lib/configs/recommended",
+    "linterOptions": {
+        "exclude": [
+            "webui/**/*"
+        ]
+    },
     "jsRules": {},
     "rules": {
-        "quotemark": [true, "single", "avoid-escape", "avoid-template"]
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape",
+            "avoid-template"
+        ],
+        "no-console": [
+            false,
+            "info"
+        ],
+        "interface-name": [
+            true,
+            "never-prefix"
+        ],
+        "object-literal-sort-keys": false,
+        "ordered-imports": [
+            true,
+            {
+                "import-sources-order": "case-insensitive",
+                "named-imports-order": "any"
+            }
+        ]
     },
     "rulesDirectory": []
 }
